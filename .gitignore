@@ -1,2 +1,5 @@
 t.*
 __pycache__
+*.yaml
+*/*.yaml
+t
