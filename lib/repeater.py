@@ -25,6 +25,13 @@ Priority: u=0, i
 
 from core.general import *
 import requests
+import cloudscraper
+# from bs4 import BeautifulSoup as bs
+
+def get_real_html(url: str, headers = None) -> str:
+    now = cloudscraper.create_scraper()
+    html = now.get(url)
+    return html.text
 
 def text_to_header(x: str):
     pre = x.split('\n')
@@ -53,3 +60,5 @@ def main(x):
 
 if __name__ == '__main__':
     __import__('..core.general').error('You should use this as a module.')
+
+# %%

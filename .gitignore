@@ -3,3 +3,8 @@ __pycache__
 *.yaml
 */*.yaml
 t
+*_result
+# *.json
+*.html
+mc.info
+*.cache
