@@ -8,3 +8,5 @@ t
 *.html
 mc.info
 *.cache
+nohup.out
+

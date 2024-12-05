@@ -41,6 +41,7 @@ def parse_problem(html: str) -> dict:
     }
     problem = dict([[i, pre.get(mark[i], [None])[0]] for i in mark])
     debug(problem)
+    return problem
     
 def get_problemlist():
     url = 'https://codeforces.com/api/problemset.problems?problemsetName'
@@ -60,26 +61,39 @@ def auto():
     pre = []
     for i in json.loads(read_from_file('problems.json.cache'))['result']['problems']:
         pre.append([i['contestId'], i['index'], get_problem_url(i['contestId'], i['index'])])
-    
+#    pre = pre[1000:]
+    p = False
     mkdir('html_result')
     mkdir('json_result')
+
+    htmls = ls('html_result')
+    jsons = ls('json_result')
+
     t = 0
     for i in pre:
-        time.sleep(ri(0,10))
+        if p == True:
+            debug(p)
+            warning('Sleeping')
+            time.sleep(ri(0,3))
         t = t + 1
         contest, index, url = i
-        info(f'[{t}/{len(pre)}] Getting html for problem {index} in contest {contest} using URL {url}.')
-        if not exist(f'html_result/{contest}{index}.html'):
-            try:
-                write_to_file(f'html_result/{contest}{index}',rp.get_real_html(url))
-            except:
-                error(f'while getting html for problem {contest}{index}')
-        if not exist(f'json_result/{contest}{index}.json'):
+        if f'{contest}{index}' not in htmls:
+            info(f'[{t}/{len(pre)}] Getting html for problem {index} in contest {contest} using URL {url}.')
+            p = True
+#            try:
+            write_to_file(f'html_result/{contest}{index}',rp.get_real_html(url))
+#            except:
+#                error(f'while getting html for problem {contest}{index}')
+        else:
+            warning(f'File found. Skipping probem {contest}{index}')
+        if f'{contest}{index}.json' not in jsons:
             try:
                 info('Parsing JSON')
-                write_to_file(f'json_result/{contest}{index}.json', parse_problem(read_from_file(f'html_result/{contest}{index}')))
+                write_to_file(f'json_result/{contest}{index}.json', json.dumps(parse_problem(read_from_file(f'html_result/{contest}{index}'))))
             except:
                 error(f'while parsing JSON file for problem {contest}{index}')
+        else:
+            warning(f'File found. Skipping probem {contest}{index}')
 
 def main():
     auto()
