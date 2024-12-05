@@ -58,7 +58,7 @@ def auto():
         write_to_file('problems.json.cache', get_problemlist())
     
     pre = []
-    for i in json.loads(read_from_file('problems.json'))['result']['problems']:
+    for i in json.loads(read_from_file('problems.json.cache'))['result']['problems']:
         pre.append([i['contestId'], i['index'], get_problem_url(i['contestId'], i['index'])])
     
     mkdir('html_result')
