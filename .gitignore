@@ -9,4 +9,5 @@ t
 mc.info
 *.cache
 nohup.out
-data
+data/html
+data/json
