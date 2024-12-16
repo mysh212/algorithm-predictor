@@ -9,3 +9,5 @@ import lib.mlb
 # info(rp.repeat(read_from_file('headers.yaml')).text)
 
 codeforces.auto()
+
+codeforces.to_csv(codeforces.get_all_problems())
