@@ -1,0 +1,1577 @@
+2024-12-16 14:10:58,945:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-16 14:10:58,945:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-16 14:10:58,945:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-16 14:10:58,945:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-16 14:11:01,486:INFO:PyCaret ClassificationExperiment
+2024-12-16 14:11:01,486:INFO:Logging name: clf-default-name
+2024-12-16 14:11:01,486:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2024-12-16 14:11:01,486:INFO:version 3.3.2
+2024-12-16 14:11:01,486:INFO:Initializing setup()
+2024-12-16 14:11:01,486:INFO:self.USI: b2d6
+2024-12-16 14:11:01,487:INFO:self._variable_keys: {'fold_groups_param', 'y_test', '_ml_usecase', 'pipeline', 'fold_shuffle_param', 'fold_generator', 'gpu_param', '_available_plots', 'X_train', 'fix_imbalance', 'idx', 'exp_name_log', 'y_train', 'memory', 'seed', 'logging_param', 'html_param', 'X_test', 'target_param', 'X', 'exp_id', 'is_multiclass', 'gpu_n_jobs_param', 'USI', 'y', 'data', 'n_jobs_param', 'log_plots_param'}
+2024-12-16 14:11:01,487:INFO:Checking environment
+2024-12-16 14:11:01,487:INFO:python_version: 3.9.7
+2024-12-16 14:11:01,487:INFO:python_build: ('default', 'Sep 29 2021 19:20:16')
+2024-12-16 14:11:01,487:INFO:machine: AMD64
+2024-12-16 14:11:01,487:INFO:platform: Windows-10-10.0.22621-SP0
+2024-12-16 14:11:01,487:INFO:Memory: svmem(total=16846147584, available=4750417920, percent=71.8, used=12095729664, free=4750417920)
+2024-12-16 14:11:01,487:INFO:Physical Core: 4
+2024-12-16 14:11:01,487:INFO:Logical Core: 8
+2024-12-16 14:11:01,487:INFO:Checking libraries
+2024-12-16 14:11:01,487:INFO:System:
+2024-12-16 14:11:01,487:INFO:    python: 3.9.7 | packaged by conda-forge | (default, Sep 29 2021, 19:20:16) [MSC v.1916 64 bit (AMD64)]
+2024-12-16 14:11:01,487:INFO:executable: c:\Users\user\anaconda3\python.exe
+2024-12-16 14:11:01,487:INFO:   machine: Windows-10-10.0.22621-SP0
+2024-12-16 14:11:01,487:INFO:PyCaret required dependencies:
+2024-12-16 14:11:02,388:WARNING:c:\Users\user\anaconda3\lib\site-packages\dask\dataframe\__init__.py:31: FutureWarning: 
+Dask dataframe query planning is disabled because dask-expr is not installed.
+
+You can install it with `pip install dask[dataframe]` or `conda install dask`.
+This will raise in a future version.
+
+  warnings.warn(msg, FutureWarning)
+
+2024-12-16 14:11:03,397:INFO:                 pip: 24.1.2
+2024-12-16 14:11:03,397:INFO:          setuptools: 69.5.1
+2024-12-16 14:11:03,397:INFO:             pycaret: 3.3.2
+2024-12-16 14:11:03,397:INFO:             IPython: 8.15.0
+2024-12-16 14:11:03,397:INFO:          ipywidgets: 8.1.2
+2024-12-16 14:11:03,397:INFO:                tqdm: 4.66.4
+2024-12-16 14:11:03,397:INFO:               numpy: 1.26.4
+2024-12-16 14:11:03,397:INFO:              pandas: 2.1.4
+2024-12-16 14:11:03,397:INFO:              jinja2: 3.1.4
+2024-12-16 14:11:03,397:INFO:               scipy: 1.11.4
+2024-12-16 14:11:03,397:INFO:              joblib: 1.3.2
+2024-12-16 14:11:03,397:INFO:             sklearn: 1.4.2
+2024-12-16 14:11:03,397:INFO:                pyod: 2.0.2
+2024-12-16 14:11:03,397:INFO:            imblearn: 0.12.3
+2024-12-16 14:11:03,397:INFO:   category_encoders: 2.6.4
+2024-12-16 14:11:03,397:INFO:            lightgbm: 4.5.0
+2024-12-16 14:11:03,397:INFO:               numba: 0.60.0
+2024-12-16 14:11:03,397:INFO:            requests: 2.32.2
+2024-12-16 14:11:03,397:INFO:          matplotlib: 3.8.4
+2024-12-16 14:11:03,397:INFO:          scikitplot: 0.3.7
+2024-12-16 14:11:03,397:INFO:         yellowbrick: 1.5
+2024-12-16 14:11:03,397:INFO:              plotly: 5.22.0
+2024-12-16 14:11:03,397:INFO:    plotly-resampler: Not installed
+2024-12-16 14:11:03,397:INFO:             kaleido: 0.4.1
+2024-12-16 14:11:03,397:INFO:           schemdraw: 0.15
+2024-12-16 14:11:03,397:INFO:         statsmodels: 0.14.2
+2024-12-16 14:11:03,397:INFO:              sktime: 0.26.0
+2024-12-16 14:11:03,397:INFO:               tbats: 1.1.3
+2024-12-16 14:11:03,397:INFO:            pmdarima: 2.0.4
+2024-12-16 14:11:03,397:INFO:              psutil: 5.9.0
+2024-12-16 14:11:03,397:INFO:          markupsafe: 2.1.3
+2024-12-16 14:11:03,397:INFO:             pickle5: Not installed
+2024-12-16 14:11:03,397:INFO:         cloudpickle: 2.2.1
+2024-12-16 14:11:03,397:INFO:         deprecation: 2.1.0
+2024-12-16 14:11:03,397:INFO:              xxhash: 3.5.0
+2024-12-16 14:11:03,397:INFO:           wurlitzer: Not installed
+2024-12-16 14:11:03,411:INFO:PyCaret optional dependencies:
+2024-12-16 14:11:03,513:INFO:                shap: 0.46.0
+2024-12-16 14:11:03,513:INFO:           interpret: Not installed
+2024-12-16 14:11:03,513:INFO:                umap: Not installed
+2024-12-16 14:11:03,513:INFO:     ydata_profiling: Not installed
+2024-12-16 14:11:03,513:INFO:  explainerdashboard: Not installed
+2024-12-16 14:11:03,513:INFO:             autoviz: Not installed
+2024-12-16 14:11:03,513:INFO:           fairlearn: Not installed
+2024-12-16 14:11:03,513:INFO:          deepchecks: Not installed
+2024-12-16 14:11:03,513:INFO:             xgboost: 2.1.2
+2024-12-16 14:11:03,513:INFO:            catboost: 1.2.7
+2024-12-16 14:11:03,513:INFO:              kmodes: Not installed
+2024-12-16 14:11:03,513:INFO:             mlxtend: Not installed
+2024-12-16 14:11:03,513:INFO:       statsforecast: Not installed
+2024-12-16 14:11:03,513:INFO:        tune_sklearn: Not installed
+2024-12-16 14:11:03,513:INFO:                 ray: Not installed
+2024-12-16 14:11:03,513:INFO:            hyperopt: Not installed
+2024-12-16 14:11:03,513:INFO:              optuna: 4.1.0
+2024-12-16 14:11:03,513:INFO:               skopt: Not installed
+2024-12-16 14:11:03,513:INFO:              mlflow: Not installed
+2024-12-16 14:11:03,513:INFO:              gradio: Not installed
+2024-12-16 14:11:03,513:INFO:             fastapi: Not installed
+2024-12-16 14:11:03,513:INFO:             uvicorn: Not installed
+2024-12-16 14:11:03,513:INFO:              m2cgen: Not installed
+2024-12-16 14:11:03,513:INFO:           evidently: Not installed
+2024-12-16 14:11:03,513:INFO:               fugue: Not installed
+2024-12-16 14:11:03,513:INFO:           streamlit: 1.22.0
+2024-12-16 14:11:03,513:INFO:             prophet: 1.1.6
+2024-12-16 14:11:03,513:INFO:None
+2024-12-16 14:11:03,513:INFO:Set up data.
+2024-12-16 14:11:03,550:INFO:Set up folding strategy.
+2024-12-16 14:11:03,550:INFO:Set up train/test split.
+2024-12-16 14:11:03,584:INFO:Set up index.
+2024-12-16 14:11:03,584:INFO:Assigning column types.
+2024-12-16 14:11:03,597:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2024-12-16 14:11:03,650:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-12-16 14:11:03,650:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-12-16 14:11:03,702:INFO:Soft dependency imported: xgboost: 2.1.2
+2024-12-16 14:11:03,704:INFO:Soft dependency imported: catboost: 1.2.7
+2024-12-16 14:11:03,962:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-12-16 14:11:03,963:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-12-16 14:11:03,989:INFO:Soft dependency imported: xgboost: 2.1.2
+2024-12-16 14:11:03,993:INFO:Soft dependency imported: catboost: 1.2.7
+2024-12-16 14:11:03,994:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2024-12-16 14:11:04,048:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-12-16 14:11:04,081:INFO:Soft dependency imported: xgboost: 2.1.2
+2024-12-16 14:11:04,081:INFO:Soft dependency imported: catboost: 1.2.7
+2024-12-16 14:11:04,139:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-12-16 14:11:04,185:INFO:Soft dependency imported: xgboost: 2.1.2
+2024-12-16 14:11:04,189:INFO:Soft dependency imported: catboost: 1.2.7
+2024-12-16 14:11:04,192:INFO:Engine successfully changes for model 'rbfsvm' to 'sklearn'.
+2024-12-16 14:11:04,285:INFO:Soft dependency imported: xgboost: 2.1.2
+2024-12-16 14:11:04,289:INFO:Soft dependency imported: catboost: 1.2.7
+2024-12-16 14:11:04,399:INFO:Soft dependency imported: xgboost: 2.1.2
+2024-12-16 14:11:04,399:INFO:Soft dependency imported: catboost: 1.2.7
+2024-12-16 14:11:04,399:INFO:Preparing preprocessing pipeline...
+2024-12-16 14:11:04,416:INFO:Set up simple imputation.
+2024-12-16 14:11:04,417:INFO:Set up text embedding.
+2024-12-16 14:11:04,417:INFO:Set up encoding of categorical features.
+2024-12-16 14:11:04,417:INFO:Set up imbalanced handling.
+2024-12-16 14:11:04,417:INFO:Set up column name cleaning.
+2024-12-16 14:11:22,349:WARNING:c:\Users\user\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:278: UserWarning: Persisting input arguments took 3.25s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  fitted_estimator = self._memory_fit(
+
+2024-12-16 14:11:22,385:INFO:Finished creating preprocessing pipeline.
+2024-12-16 14:11:22,402:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\Users\user\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['TL', 'ML', 'rating'],
+                                    transformer=SimpleImputer(add_indicator=False,
+                                                              copy=True,
+                                                              fill_value=None,
+                                                              keep_empty_features=False,
+                                                              missing_values=nan,
+                                                              strategy='mean'))),
+                ('categorical_imputer',
+                 TransformerWrapper(exclud...
+                                                              return_df=True,
+                                                              smoothing=10,
+                                                              verbose=0))),
+                ('balance',
+                 TransformerWrapper(exclude=None, include=None,
+                                    transformer=FixImbalancer(estimator=SMOTE(k_neighbors=5,
+                                                                              n_jobs=None,
+                                                                              random_state=123,
+                                                                              sampling_strategy='auto')))),
+                ('clean_column_names',
+                 TransformerWrapper(exclude=None, include=None,
+                                    transformer=CleanColumnNames(match='[\\]\\[\\,\\{\\}\\"\\:]+')))],
+         verbose=False)
+2024-12-16 14:11:22,402:INFO:Creating final display dataframe.
+2024-12-16 14:30:05,639:INFO:PyCaret ClassificationExperiment
+2024-12-16 14:30:05,639:INFO:Logging name: clf-default-name
+2024-12-16 14:30:05,640:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2024-12-16 14:30:05,640:INFO:version 3.3.2
+2024-12-16 14:30:05,640:INFO:Initializing setup()
+2024-12-16 14:30:05,640:INFO:self.USI: e43c
+2024-12-16 14:30:05,640:INFO:self._variable_keys: {'fold_groups_param', 'y_test', '_ml_usecase', 'pipeline', 'fold_shuffle_param', 'fold_generator', 'gpu_param', '_available_plots', 'X_train', 'fix_imbalance', 'idx', 'exp_name_log', 'y_train', 'memory', 'seed', 'logging_param', 'html_param', 'X_test', 'target_param', 'X', 'exp_id', 'is_multiclass', 'gpu_n_jobs_param', 'USI', 'y', 'data', 'n_jobs_param', 'log_plots_param'}
+2024-12-16 14:30:05,640:INFO:Checking environment
+2024-12-16 14:30:05,640:INFO:python_version: 3.9.7
+2024-12-16 14:30:05,640:INFO:python_build: ('default', 'Sep 29 2021 19:20:16')
+2024-12-16 14:30:05,640:INFO:machine: AMD64
+2024-12-16 14:30:05,640:INFO:platform: Windows-10-10.0.22621-SP0
+2024-12-16 14:30:05,641:INFO:Memory: svmem(total=16846147584, available=3946754048, percent=76.6, used=12899393536, free=3946754048)
+2024-12-16 14:30:05,641:INFO:Physical Core: 4
+2024-12-16 14:30:05,641:INFO:Logical Core: 8
+2024-12-16 14:30:05,641:INFO:Checking libraries
+2024-12-16 14:30:05,641:INFO:System:
+2024-12-16 14:30:05,641:INFO:    python: 3.9.7 | packaged by conda-forge | (default, Sep 29 2021, 19:20:16) [MSC v.1916 64 bit (AMD64)]
+2024-12-16 14:30:05,641:INFO:executable: c:\Users\user\anaconda3\python.exe
+2024-12-16 14:30:05,641:INFO:   machine: Windows-10-10.0.22621-SP0
+2024-12-16 14:30:05,641:INFO:PyCaret required dependencies:
+2024-12-16 14:30:05,641:INFO:                 pip: 24.1.2
+2024-12-16 14:30:05,641:INFO:          setuptools: 69.5.1
+2024-12-16 14:30:05,641:INFO:             pycaret: 3.3.2
+2024-12-16 14:30:05,641:INFO:             IPython: 8.15.0
+2024-12-16 14:30:05,641:INFO:          ipywidgets: 8.1.2
+2024-12-16 14:30:05,641:INFO:                tqdm: 4.66.4
+2024-12-16 14:30:05,641:INFO:               numpy: 1.26.4
+2024-12-16 14:30:05,641:INFO:              pandas: 2.1.4
+2024-12-16 14:30:05,642:INFO:              jinja2: 3.1.4
+2024-12-16 14:30:05,642:INFO:               scipy: 1.11.4
+2024-12-16 14:30:05,642:INFO:              joblib: 1.3.2
+2024-12-16 14:30:05,642:INFO:             sklearn: 1.4.2
+2024-12-16 14:30:05,642:INFO:                pyod: 2.0.2
+2024-12-16 14:30:05,642:INFO:            imblearn: 0.12.3
+2024-12-16 14:30:05,642:INFO:   category_encoders: 2.6.4
+2024-12-16 14:30:05,642:INFO:            lightgbm: 4.5.0
+2024-12-16 14:30:05,642:INFO:               numba: 0.60.0
+2024-12-16 14:30:05,642:INFO:            requests: 2.32.2
+2024-12-16 14:30:05,642:INFO:          matplotlib: 3.8.4
+2024-12-16 14:30:05,642:INFO:          scikitplot: 0.3.7
+2024-12-16 14:30:05,642:INFO:         yellowbrick: 1.5
+2024-12-16 14:30:05,642:INFO:              plotly: 5.22.0
+2024-12-16 14:30:05,642:INFO:    plotly-resampler: Not installed
+2024-12-16 14:30:05,642:INFO:             kaleido: 0.4.1
+2024-12-16 14:30:05,642:INFO:           schemdraw: 0.15
+2024-12-16 14:30:05,642:INFO:         statsmodels: 0.14.2
+2024-12-16 14:30:05,642:INFO:              sktime: 0.26.0
+2024-12-16 14:30:05,642:INFO:               tbats: 1.1.3
+2024-12-16 14:30:05,642:INFO:            pmdarima: 2.0.4
+2024-12-16 14:30:05,642:INFO:              psutil: 5.9.0
+2024-12-16 14:30:05,642:INFO:          markupsafe: 2.1.3
+2024-12-16 14:30:05,642:INFO:             pickle5: Not installed
+2024-12-16 14:30:05,642:INFO:         cloudpickle: 2.2.1
+2024-12-16 14:30:05,642:INFO:         deprecation: 2.1.0
+2024-12-16 14:30:05,642:INFO:              xxhash: 3.5.0
+2024-12-16 14:30:05,642:INFO:           wurlitzer: Not installed
+2024-12-16 14:30:05,642:INFO:PyCaret optional dependencies:
+2024-12-16 14:30:05,642:INFO:                shap: 0.46.0
+2024-12-16 14:30:05,644:INFO:           interpret: Not installed
+2024-12-16 14:30:05,644:INFO:                umap: Not installed
+2024-12-16 14:30:05,644:INFO:     ydata_profiling: Not installed
+2024-12-16 14:30:05,644:INFO:  explainerdashboard: Not installed
+2024-12-16 14:30:05,644:INFO:             autoviz: Not installed
+2024-12-16 14:30:05,644:INFO:           fairlearn: Not installed
+2024-12-16 14:30:05,644:INFO:          deepchecks: Not installed
+2024-12-16 14:30:05,644:INFO:             xgboost: 2.1.2
+2024-12-16 14:30:05,644:INFO:            catboost: 1.2.7
+2024-12-16 14:30:05,644:INFO:              kmodes: Not installed
+2024-12-16 14:30:05,644:INFO:             mlxtend: Not installed
+2024-12-16 14:30:05,644:INFO:       statsforecast: Not installed
+2024-12-16 14:30:05,644:INFO:        tune_sklearn: Not installed
+2024-12-16 14:30:05,644:INFO:                 ray: Not installed
+2024-12-16 14:30:05,644:INFO:            hyperopt: Not installed
+2024-12-16 14:30:05,644:INFO:              optuna: 4.1.0
+2024-12-16 14:30:05,644:INFO:               skopt: Not installed
+2024-12-16 14:30:05,645:INFO:              mlflow: Not installed
+2024-12-16 14:30:05,645:INFO:              gradio: Not installed
+2024-12-16 14:30:05,645:INFO:             fastapi: Not installed
+2024-12-16 14:30:05,645:INFO:             uvicorn: Not installed
+2024-12-16 14:30:05,645:INFO:              m2cgen: Not installed
+2024-12-16 14:30:05,645:INFO:           evidently: Not installed
+2024-12-16 14:30:05,645:INFO:               fugue: Not installed
+2024-12-16 14:30:05,645:INFO:           streamlit: 1.22.0
+2024-12-16 14:30:05,645:INFO:             prophet: 1.1.6
+2024-12-16 14:30:05,645:INFO:None
+2024-12-16 14:30:05,645:INFO:Set up data.
+2024-12-16 14:30:33,868:INFO:PyCaret ClassificationExperiment
+2024-12-16 14:30:33,869:INFO:Logging name: clf-default-name
+2024-12-16 14:30:33,869:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2024-12-16 14:30:33,869:INFO:version 3.3.2
+2024-12-16 14:30:33,869:INFO:Initializing setup()
+2024-12-16 14:30:33,869:INFO:self.USI: 0c36
+2024-12-16 14:30:33,869:INFO:self._variable_keys: {'fold_groups_param', 'y_test', '_ml_usecase', 'pipeline', 'fold_shuffle_param', 'fold_generator', 'gpu_param', '_available_plots', 'X_train', 'fix_imbalance', 'idx', 'exp_name_log', 'y_train', 'memory', 'seed', 'logging_param', 'html_param', 'X_test', 'target_param', 'X', 'exp_id', 'is_multiclass', 'gpu_n_jobs_param', 'USI', 'y', 'data', 'n_jobs_param', 'log_plots_param'}
+2024-12-16 14:30:33,869:INFO:Checking environment
+2024-12-16 14:30:33,869:INFO:python_version: 3.9.7
+2024-12-16 14:30:33,869:INFO:python_build: ('default', 'Sep 29 2021 19:20:16')
+2024-12-16 14:30:33,869:INFO:machine: AMD64
+2024-12-16 14:30:33,869:INFO:platform: Windows-10-10.0.22621-SP0
+2024-12-16 14:30:33,869:INFO:Memory: svmem(total=16846147584, available=3861585920, percent=77.1, used=12984561664, free=3861585920)
+2024-12-16 14:30:33,869:INFO:Physical Core: 4
+2024-12-16 14:30:33,869:INFO:Logical Core: 8
+2024-12-16 14:30:33,870:INFO:Checking libraries
+2024-12-16 14:30:33,870:INFO:System:
+2024-12-16 14:30:33,870:INFO:    python: 3.9.7 | packaged by conda-forge | (default, Sep 29 2021, 19:20:16) [MSC v.1916 64 bit (AMD64)]
+2024-12-16 14:30:33,870:INFO:executable: c:\Users\user\anaconda3\python.exe
+2024-12-16 14:30:33,870:INFO:   machine: Windows-10-10.0.22621-SP0
+2024-12-16 14:30:33,870:INFO:PyCaret required dependencies:
+2024-12-16 14:30:33,870:INFO:                 pip: 24.1.2
+2024-12-16 14:30:33,870:INFO:          setuptools: 69.5.1
+2024-12-16 14:30:33,870:INFO:             pycaret: 3.3.2
+2024-12-16 14:30:33,870:INFO:             IPython: 8.15.0
+2024-12-16 14:30:33,870:INFO:          ipywidgets: 8.1.2
+2024-12-16 14:30:33,870:INFO:                tqdm: 4.66.4
+2024-12-16 14:30:33,870:INFO:               numpy: 1.26.4
+2024-12-16 14:30:33,870:INFO:              pandas: 2.1.4
+2024-12-16 14:30:33,870:INFO:              jinja2: 3.1.4
+2024-12-16 14:30:33,870:INFO:               scipy: 1.11.4
+2024-12-16 14:30:33,871:INFO:              joblib: 1.3.2
+2024-12-16 14:30:33,871:INFO:             sklearn: 1.4.2
+2024-12-16 14:30:33,871:INFO:                pyod: 2.0.2
+2024-12-16 14:30:33,871:INFO:            imblearn: 0.12.3
+2024-12-16 14:30:33,871:INFO:   category_encoders: 2.6.4
+2024-12-16 14:30:33,871:INFO:            lightgbm: 4.5.0
+2024-12-16 14:30:33,871:INFO:               numba: 0.60.0
+2024-12-16 14:30:33,871:INFO:            requests: 2.32.2
+2024-12-16 14:30:33,871:INFO:          matplotlib: 3.8.4
+2024-12-16 14:30:33,871:INFO:          scikitplot: 0.3.7
+2024-12-16 14:30:33,871:INFO:         yellowbrick: 1.5
+2024-12-16 14:30:33,871:INFO:              plotly: 5.22.0
+2024-12-16 14:30:33,871:INFO:    plotly-resampler: Not installed
+2024-12-16 14:30:33,871:INFO:             kaleido: 0.4.1
+2024-12-16 14:30:33,871:INFO:           schemdraw: 0.15
+2024-12-16 14:30:33,871:INFO:         statsmodels: 0.14.2
+2024-12-16 14:30:33,871:INFO:              sktime: 0.26.0
+2024-12-16 14:30:33,871:INFO:               tbats: 1.1.3
+2024-12-16 14:30:33,871:INFO:            pmdarima: 2.0.4
+2024-12-16 14:30:33,872:INFO:              psutil: 5.9.0
+2024-12-16 14:30:33,872:INFO:          markupsafe: 2.1.3
+2024-12-16 14:30:33,872:INFO:             pickle5: Not installed
+2024-12-16 14:30:33,872:INFO:         cloudpickle: 2.2.1
+2024-12-16 14:30:33,872:INFO:         deprecation: 2.1.0
+2024-12-16 14:30:33,872:INFO:              xxhash: 3.5.0
+2024-12-16 14:30:33,872:INFO:           wurlitzer: Not installed
+2024-12-16 14:30:33,872:INFO:PyCaret optional dependencies:
+2024-12-16 14:30:33,872:INFO:                shap: 0.46.0
+2024-12-16 14:30:33,872:INFO:           interpret: Not installed
+2024-12-16 14:30:33,872:INFO:                umap: Not installed
+2024-12-16 14:30:33,872:INFO:     ydata_profiling: Not installed
+2024-12-16 14:30:33,872:INFO:  explainerdashboard: Not installed
+2024-12-16 14:30:33,872:INFO:             autoviz: Not installed
+2024-12-16 14:30:33,872:INFO:           fairlearn: Not installed
+2024-12-16 14:30:33,873:INFO:          deepchecks: Not installed
+2024-12-16 14:30:33,873:INFO:             xgboost: 2.1.2
+2024-12-16 14:30:33,873:INFO:            catboost: 1.2.7
+2024-12-16 14:30:33,873:INFO:              kmodes: Not installed
+2024-12-16 14:30:33,873:INFO:             mlxtend: Not installed
+2024-12-16 14:30:33,873:INFO:       statsforecast: Not installed
+2024-12-16 14:30:33,873:INFO:        tune_sklearn: Not installed
+2024-12-16 14:30:33,873:INFO:                 ray: Not installed
+2024-12-16 14:30:33,873:INFO:            hyperopt: Not installed
+2024-12-16 14:30:33,873:INFO:              optuna: 4.1.0
+2024-12-16 14:30:33,873:INFO:               skopt: Not installed
+2024-12-16 14:30:33,873:INFO:              mlflow: Not installed
+2024-12-16 14:30:33,873:INFO:              gradio: Not installed
+2024-12-16 14:30:33,873:INFO:             fastapi: Not installed
+2024-12-16 14:30:33,873:INFO:             uvicorn: Not installed
+2024-12-16 14:30:33,873:INFO:              m2cgen: Not installed
+2024-12-16 14:30:33,873:INFO:           evidently: Not installed
+2024-12-16 14:30:33,873:INFO:               fugue: Not installed
+2024-12-16 14:30:33,873:INFO:           streamlit: 1.22.0
+2024-12-16 14:30:33,874:INFO:             prophet: 1.1.6
+2024-12-16 14:30:33,874:INFO:None
+2024-12-16 14:30:33,874:INFO:Set up data.
+2024-12-16 14:30:33,901:INFO:Set up folding strategy.
+2024-12-16 14:30:33,901:INFO:Set up train/test split.
+2024-12-16 14:30:33,930:INFO:Set up index.
+2024-12-16 14:30:33,930:INFO:Assigning column types.
+2024-12-16 14:30:33,934:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2024-12-16 14:30:33,963:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-12-16 14:30:33,963:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-12-16 14:30:33,999:INFO:Soft dependency imported: xgboost: 2.1.2
+2024-12-16 14:30:34,001:INFO:Soft dependency imported: catboost: 1.2.7
+2024-12-16 14:30:34,029:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-12-16 14:30:34,029:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-12-16 14:30:34,062:INFO:Soft dependency imported: xgboost: 2.1.2
+2024-12-16 14:30:34,062:INFO:Soft dependency imported: catboost: 1.2.7
+2024-12-16 14:30:34,062:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2024-12-16 14:30:34,110:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-12-16 14:30:34,129:INFO:Soft dependency imported: xgboost: 2.1.2
+2024-12-16 14:30:34,129:INFO:Soft dependency imported: catboost: 1.2.7
+2024-12-16 14:30:34,179:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-12-16 14:30:34,210:INFO:Soft dependency imported: xgboost: 2.1.2
+2024-12-16 14:30:34,210:INFO:Soft dependency imported: catboost: 1.2.7
+2024-12-16 14:30:34,210:INFO:Engine successfully changes for model 'rbfsvm' to 'sklearn'.
+2024-12-16 14:30:34,277:INFO:Soft dependency imported: xgboost: 2.1.2
+2024-12-16 14:30:34,277:INFO:Soft dependency imported: catboost: 1.2.7
+2024-12-16 14:30:34,340:INFO:Soft dependency imported: xgboost: 2.1.2
+2024-12-16 14:30:34,340:INFO:Soft dependency imported: catboost: 1.2.7
+2024-12-16 14:30:34,356:INFO:Preparing preprocessing pipeline...
+2024-12-16 14:30:34,356:INFO:Set up simple imputation.
+2024-12-16 14:30:34,356:INFO:Set up text embedding.
+2024-12-16 14:30:34,356:INFO:Set up encoding of categorical features.
+2024-12-16 14:30:34,356:INFO:Set up column name cleaning.
+2024-12-16 14:30:38,982:INFO:Finished creating preprocessing pipeline.
+2024-12-16 14:30:38,998:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\Users\user\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['TL', 'ML', 'contest', 'rating'],
+                                    transformer=SimpleImputer(add_indicator=False,
+                                                              copy=True,
+                                                              fill_value=None,
+                                                              keep_empty_features=False,
+                                                              missing_values=nan,
+                                                              strategy='mean'))),
+                ('categorical_imputer',
+                 TransformerWrap...
+                 TransformerWrapper(exclude=None, include=['index'],
+                                    transformer=TargetEncoder(cols=['index'],
+                                                              drop_invariant=False,
+                                                              handle_missing='return_nan',
+                                                              handle_unknown='value',
+                                                              hierarchy=None,
+                                                              min_samples_leaf=20,
+                                                              return_df=True,
+                                                              smoothing=10,
+                                                              verbose=0))),
+                ('clean_column_names',
+                 TransformerWrapper(exclude=None, include=None,
+                                    transformer=CleanColumnNames(match='[\\]\\[\\,\\{\\}\\"\\:]+')))],
+         verbose=False)
+2024-12-16 14:30:38,998:INFO:Creating final display dataframe.
+2024-12-16 14:30:48,647:INFO:Setup _display_container:                        Description             Value
+0                       Session id               123
+1                           Target     binary search
+2                      Target type            Binary
+3              Original data shape        (1000, 49)
+4           Transformed data shape     (1000, 17117)
+5      Transformed train set shape      (700, 17117)
+6       Transformed test set shape      (300, 17117)
+7                  Ignore features                36
+8                 Numeric features                 4
+9                    Text features                 7
+10            Categorical features                 1
+11        Rows with missing values             34.3%
+12                      Preprocess              True
+13                 Imputation type            simple
+14              Numeric imputation              mean
+15          Categorical imputation              mode
+16  Text features embedding method            tf-idf
+17        Maximum one-hot encoding                25
+18                 Encoding method              None
+19                  Fold Generator   StratifiedKFold
+20                     Fold Number                10
+21                        CPU Jobs                -1
+22                         Use GPU             False
+23                  Log Experiment             False
+24                 Experiment Name  clf-default-name
+25                             USI              0c36
+2024-12-16 14:30:48,752:INFO:Soft dependency imported: xgboost: 2.1.2
+2024-12-16 14:30:48,752:INFO:Soft dependency imported: catboost: 1.2.7
+2024-12-16 14:30:48,816:INFO:Soft dependency imported: xgboost: 2.1.2
+2024-12-16 14:30:48,816:INFO:Soft dependency imported: catboost: 1.2.7
+2024-12-16 14:30:48,816:INFO:setup() successfully completed in 14.98s...............
+2024-12-16 14:30:48,816:INFO:Initializing create_model()
+2024-12-16 14:30:48,816:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000025B6D036D60>, estimator=lightgbm, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs=None, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-12-16 14:30:48,816:INFO:Checking exceptions
+2024-12-16 14:30:48,831:INFO:Importing libraries
+2024-12-16 14:30:48,831:INFO:Copying training dataset
+2024-12-16 14:30:48,851:INFO:Defining folds
+2024-12-16 14:30:48,851:INFO:Declaring metric variables
+2024-12-16 14:30:48,851:INFO:Importing untrained model
+2024-12-16 14:30:48,851:INFO:Light Gradient Boosting Machine Imported successfully
+2024-12-16 14:30:48,870:INFO:Starting cross validation
+2024-12-16 14:30:48,973:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-12-16 14:30:54,466:WARNING:c:\Users\user\anaconda3\lib\site-packages\dask\dataframe\__init__.py:31: FutureWarning: 
+Dask dataframe query planning is disabled because dask-expr is not installed.
+
+You can install it with `pip install dask[dataframe]` or `conda install dask`.
+This will raise in a future version.
+
+  warnings.warn(msg, FutureWarning)
+
+2024-12-16 14:30:54,487:WARNING:c:\Users\user\anaconda3\lib\site-packages\dask\dataframe\__init__.py:31: FutureWarning: 
+Dask dataframe query planning is disabled because dask-expr is not installed.
+
+You can install it with `pip install dask[dataframe]` or `conda install dask`.
+This will raise in a future version.
+
+  warnings.warn(msg, FutureWarning)
+
+2024-12-16 14:30:54,503:WARNING:c:\Users\user\anaconda3\lib\site-packages\dask\dataframe\__init__.py:31: FutureWarning: 
+Dask dataframe query planning is disabled because dask-expr is not installed.
+
+You can install it with `pip install dask[dataframe]` or `conda install dask`.
+This will raise in a future version.
+
+  warnings.warn(msg, FutureWarning)
+
+2024-12-16 14:30:54,538:WARNING:c:\Users\user\anaconda3\lib\site-packages\dask\dataframe\__init__.py:31: FutureWarning: 
+Dask dataframe query planning is disabled because dask-expr is not installed.
+
+You can install it with `pip install dask[dataframe]` or `conda install dask`.
+This will raise in a future version.
+
+  warnings.warn(msg, FutureWarning)
+
+2024-12-16 14:30:54,540:WARNING:c:\Users\user\anaconda3\lib\site-packages\dask\dataframe\__init__.py:31: FutureWarning: 
+Dask dataframe query planning is disabled because dask-expr is not installed.
+
+You can install it with `pip install dask[dataframe]` or `conda install dask`.
+This will raise in a future version.
+
+  warnings.warn(msg, FutureWarning)
+
+2024-12-16 14:30:54,566:WARNING:c:\Users\user\anaconda3\lib\site-packages\dask\dataframe\__init__.py:31: FutureWarning: 
+Dask dataframe query planning is disabled because dask-expr is not installed.
+
+You can install it with `pip install dask[dataframe]` or `conda install dask`.
+This will raise in a future version.
+
+  warnings.warn(msg, FutureWarning)
+
+2024-12-16 14:30:54,731:WARNING:c:\Users\user\anaconda3\lib\site-packages\dask\dataframe\__init__.py:31: FutureWarning: 
+Dask dataframe query planning is disabled because dask-expr is not installed.
+
+You can install it with `pip install dask[dataframe]` or `conda install dask`.
+This will raise in a future version.
+
+  warnings.warn(msg, FutureWarning)
+
+2024-12-16 14:30:54,761:WARNING:c:\Users\user\anaconda3\lib\site-packages\dask\dataframe\__init__.py:31: FutureWarning: 
+Dask dataframe query planning is disabled because dask-expr is not installed.
+
+You can install it with `pip install dask[dataframe]` or `conda install dask`.
+This will raise in a future version.
+
+  warnings.warn(msg, FutureWarning)
+
+2024-12-16 14:31:11,434:WARNING:c:\Users\user\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2024-12-16 14:31:11,812:WARNING:c:\Users\user\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2024-12-16 14:31:12,579:WARNING:c:\Users\user\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2024-12-16 14:31:16,916:WARNING:c:\Users\user\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2024-12-16 14:31:17,029:WARNING:c:\Users\user\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2024-12-16 14:31:20,289:WARNING:c:\Users\user\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2024-12-16 14:31:20,317:WARNING:c:\Users\user\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2024-12-16 14:31:20,331:INFO:Calculating mean and std
+2024-12-16 14:31:20,333:INFO:Creating metrics dataframe
+2024-12-16 14:31:20,341:INFO:Finalizing model
+2024-12-16 14:31:24,101:INFO:[LightGBM] [Info] Number of positive: 76, number of negative: 624
+2024-12-16 14:31:24,119:INFO:[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.009462 seconds.
+2024-12-16 14:31:24,120:INFO:You can set `force_col_wise=true` to remove the overhead.
+2024-12-16 14:31:24,122:INFO:[LightGBM] [Info] Total Bins 27562
+2024-12-16 14:31:24,124:INFO:[LightGBM] [Info] Number of data points in the train set: 700, number of used features: 906
+2024-12-16 14:31:24,129:INFO:[LightGBM] [Info] [binary:BoostFromScore]: pavg=0.108571 -> initscore=-2.105417
+2024-12-16 14:31:24,129:INFO:[LightGBM] [Info] Start training from score -2.105417
+2024-12-16 14:31:24,132:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:31:24,132:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:31:24,132:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:31:24,132:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:31:24,149:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:31:24,162:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:31:24,167:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:31:24,171:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:31:24,174:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:31:24,177:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:31:24,196:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:31:24,201:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:31:24,205:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:31:24,209:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:31:24,227:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:31:24,230:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:31:24,235:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:31:24,240:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:31:24,250:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:31:24,255:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:31:24,259:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:31:24,269:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:31:24,278:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:31:24,278:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:31:24,289:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:31:24,299:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:31:24,305:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:31:24,321:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:31:24,328:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:31:24,335:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:31:24,458:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:31:24,572:INFO:Uploading results into container
+2024-12-16 14:31:24,573:INFO:Uploading model into container now
+2024-12-16 14:31:24,591:INFO:_master_model_container: 1
+2024-12-16 14:31:24,591:INFO:_display_container: 2
+2024-12-16 14:31:24,591:INFO:LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0)
+2024-12-16 14:31:24,591:INFO:create_model() successfully completed......................................
+2024-12-16 14:31:25,459:INFO:Initializing evaluate_model()
+2024-12-16 14:31:25,459:INFO:evaluate_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000025B6D036D60>, estimator=LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0), fold=None, fit_kwargs=None, plot_kwargs=None, feature_name=None, groups=None)
+2024-12-16 14:31:25,477:INFO:Initializing plot_model()
+2024-12-16 14:31:25,477:INFO:plot_model(plot=pipeline, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), verbose=False, display=None, display_format=None, estimator=LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000025B6D036D60>, system=True)
+2024-12-16 14:31:25,477:INFO:Checking exceptions
+2024-12-16 14:31:25,486:INFO:Preloading libraries
+2024-12-16 14:31:25,503:INFO:Copying training dataset
+2024-12-16 14:31:25,503:INFO:Plot type: pipeline
+2024-12-16 14:31:25,801:INFO:Visual Rendered Successfully
+2024-12-16 14:31:26,052:INFO:plot_model() successfully completed......................................
+2024-12-16 14:31:26,096:INFO:PyCaret ClassificationExperiment
+2024-12-16 14:31:26,096:INFO:Logging name: clf-default-name
+2024-12-16 14:31:26,096:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2024-12-16 14:31:26,096:INFO:version 3.3.2
+2024-12-16 14:31:26,097:INFO:Initializing setup()
+2024-12-16 14:31:26,097:INFO:self.USI: 72fd
+2024-12-16 14:31:26,097:INFO:self._variable_keys: {'fold_groups_param', 'y_test', '_ml_usecase', 'pipeline', 'fold_shuffle_param', 'fold_generator', 'gpu_param', '_available_plots', 'X_train', 'fix_imbalance', 'idx', 'exp_name_log', 'y_train', 'memory', 'seed', 'logging_param', 'html_param', 'X_test', 'target_param', 'X', 'exp_id', 'is_multiclass', 'gpu_n_jobs_param', 'USI', 'y', 'data', 'n_jobs_param', 'log_plots_param'}
+2024-12-16 14:31:26,097:INFO:Checking environment
+2024-12-16 14:31:26,097:INFO:python_version: 3.9.7
+2024-12-16 14:31:26,097:INFO:python_build: ('default', 'Sep 29 2021 19:20:16')
+2024-12-16 14:31:26,097:INFO:machine: AMD64
+2024-12-16 14:31:26,097:INFO:platform: Windows-10-10.0.22621-SP0
+2024-12-16 14:31:26,097:INFO:Memory: svmem(total=16846147584, available=3241807872, percent=80.8, used=13604339712, free=3241807872)
+2024-12-16 14:31:26,097:INFO:Physical Core: 4
+2024-12-16 14:31:26,098:INFO:Logical Core: 8
+2024-12-16 14:31:26,098:INFO:Checking libraries
+2024-12-16 14:31:26,098:INFO:System:
+2024-12-16 14:31:26,098:INFO:    python: 3.9.7 | packaged by conda-forge | (default, Sep 29 2021, 19:20:16) [MSC v.1916 64 bit (AMD64)]
+2024-12-16 14:31:26,098:INFO:executable: c:\Users\user\anaconda3\python.exe
+2024-12-16 14:31:26,098:INFO:   machine: Windows-10-10.0.22621-SP0
+2024-12-16 14:31:26,098:INFO:PyCaret required dependencies:
+2024-12-16 14:31:26,098:INFO:                 pip: 24.1.2
+2024-12-16 14:31:26,098:INFO:          setuptools: 69.5.1
+2024-12-16 14:31:26,098:INFO:             pycaret: 3.3.2
+2024-12-16 14:31:26,098:INFO:             IPython: 8.15.0
+2024-12-16 14:31:26,098:INFO:          ipywidgets: 8.1.2
+2024-12-16 14:31:26,098:INFO:                tqdm: 4.66.4
+2024-12-16 14:31:26,099:INFO:               numpy: 1.26.4
+2024-12-16 14:31:26,099:INFO:              pandas: 2.1.4
+2024-12-16 14:31:26,099:INFO:              jinja2: 3.1.4
+2024-12-16 14:31:26,099:INFO:               scipy: 1.11.4
+2024-12-16 14:31:26,099:INFO:              joblib: 1.3.2
+2024-12-16 14:31:26,099:INFO:             sklearn: 1.4.2
+2024-12-16 14:31:26,099:INFO:                pyod: 2.0.2
+2024-12-16 14:31:26,099:INFO:            imblearn: 0.12.3
+2024-12-16 14:31:26,099:INFO:   category_encoders: 2.6.4
+2024-12-16 14:31:26,099:INFO:            lightgbm: 4.5.0
+2024-12-16 14:31:26,099:INFO:               numba: 0.60.0
+2024-12-16 14:31:26,099:INFO:            requests: 2.32.2
+2024-12-16 14:31:26,099:INFO:          matplotlib: 3.8.4
+2024-12-16 14:31:26,099:INFO:          scikitplot: 0.3.7
+2024-12-16 14:31:26,099:INFO:         yellowbrick: 1.5
+2024-12-16 14:31:26,099:INFO:              plotly: 5.22.0
+2024-12-16 14:31:26,099:INFO:    plotly-resampler: Not installed
+2024-12-16 14:31:26,099:INFO:             kaleido: 0.4.1
+2024-12-16 14:31:26,099:INFO:           schemdraw: 0.15
+2024-12-16 14:31:26,099:INFO:         statsmodels: 0.14.2
+2024-12-16 14:31:26,101:INFO:              sktime: 0.26.0
+2024-12-16 14:31:26,101:INFO:               tbats: 1.1.3
+2024-12-16 14:31:26,101:INFO:            pmdarima: 2.0.4
+2024-12-16 14:31:26,101:INFO:              psutil: 5.9.0
+2024-12-16 14:31:26,101:INFO:          markupsafe: 2.1.3
+2024-12-16 14:31:26,101:INFO:             pickle5: Not installed
+2024-12-16 14:31:26,101:INFO:         cloudpickle: 2.2.1
+2024-12-16 14:31:26,101:INFO:         deprecation: 2.1.0
+2024-12-16 14:31:26,101:INFO:              xxhash: 3.5.0
+2024-12-16 14:31:26,101:INFO:           wurlitzer: Not installed
+2024-12-16 14:31:26,101:INFO:PyCaret optional dependencies:
+2024-12-16 14:31:26,101:INFO:                shap: 0.46.0
+2024-12-16 14:31:26,101:INFO:           interpret: Not installed
+2024-12-16 14:31:26,101:INFO:                umap: Not installed
+2024-12-16 14:31:26,101:INFO:     ydata_profiling: Not installed
+2024-12-16 14:31:26,101:INFO:  explainerdashboard: Not installed
+2024-12-16 14:31:26,101:INFO:             autoviz: Not installed
+2024-12-16 14:31:26,101:INFO:           fairlearn: Not installed
+2024-12-16 14:31:26,101:INFO:          deepchecks: Not installed
+2024-12-16 14:31:26,101:INFO:             xgboost: 2.1.2
+2024-12-16 14:31:26,102:INFO:            catboost: 1.2.7
+2024-12-16 14:31:26,102:INFO:              kmodes: Not installed
+2024-12-16 14:31:26,102:INFO:             mlxtend: Not installed
+2024-12-16 14:31:26,102:INFO:       statsforecast: Not installed
+2024-12-16 14:31:26,102:INFO:        tune_sklearn: Not installed
+2024-12-16 14:31:26,102:INFO:                 ray: Not installed
+2024-12-16 14:31:26,102:INFO:            hyperopt: Not installed
+2024-12-16 14:31:26,102:INFO:              optuna: 4.1.0
+2024-12-16 14:31:26,102:INFO:               skopt: Not installed
+2024-12-16 14:31:26,102:INFO:              mlflow: Not installed
+2024-12-16 14:31:26,102:INFO:              gradio: Not installed
+2024-12-16 14:31:26,102:INFO:             fastapi: Not installed
+2024-12-16 14:31:26,102:INFO:             uvicorn: Not installed
+2024-12-16 14:31:26,102:INFO:              m2cgen: Not installed
+2024-12-16 14:31:26,102:INFO:           evidently: Not installed
+2024-12-16 14:31:26,102:INFO:               fugue: Not installed
+2024-12-16 14:31:26,102:INFO:           streamlit: 1.22.0
+2024-12-16 14:31:26,102:INFO:             prophet: 1.1.6
+2024-12-16 14:31:26,102:INFO:None
+2024-12-16 14:31:26,102:INFO:Set up data.
+2024-12-16 14:31:26,131:INFO:Set up folding strategy.
+2024-12-16 14:31:26,131:INFO:Set up train/test split.
+2024-12-16 14:31:26,137:INFO:Set up index.
+2024-12-16 14:31:26,148:INFO:Assigning column types.
+2024-12-16 14:31:26,152:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2024-12-16 14:31:26,197:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-12-16 14:31:26,197:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-12-16 14:31:26,248:INFO:Soft dependency imported: xgboost: 2.1.2
+2024-12-16 14:31:26,249:INFO:Soft dependency imported: catboost: 1.2.7
+2024-12-16 14:31:26,294:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-12-16 14:31:26,295:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-12-16 14:31:26,315:INFO:Soft dependency imported: xgboost: 2.1.2
+2024-12-16 14:31:26,315:INFO:Soft dependency imported: catboost: 1.2.7
+2024-12-16 14:31:26,315:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2024-12-16 14:31:26,365:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-12-16 14:31:26,395:INFO:Soft dependency imported: xgboost: 2.1.2
+2024-12-16 14:31:26,400:INFO:Soft dependency imported: catboost: 1.2.7
+2024-12-16 14:31:26,447:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-12-16 14:31:26,472:INFO:Soft dependency imported: xgboost: 2.1.2
+2024-12-16 14:31:26,475:INFO:Soft dependency imported: catboost: 1.2.7
+2024-12-16 14:31:26,475:INFO:Engine successfully changes for model 'rbfsvm' to 'sklearn'.
+2024-12-16 14:31:26,548:INFO:Soft dependency imported: xgboost: 2.1.2
+2024-12-16 14:31:26,552:INFO:Soft dependency imported: catboost: 1.2.7
+2024-12-16 14:31:26,622:INFO:Soft dependency imported: xgboost: 2.1.2
+2024-12-16 14:31:26,625:INFO:Soft dependency imported: catboost: 1.2.7
+2024-12-16 14:31:26,626:INFO:Preparing preprocessing pipeline...
+2024-12-16 14:31:26,627:INFO:Set up simple imputation.
+2024-12-16 14:31:26,627:INFO:Set up text embedding.
+2024-12-16 14:31:26,629:INFO:Set up encoding of categorical features.
+2024-12-16 14:31:26,629:INFO:Set up column name cleaning.
+2024-12-16 14:31:31,308:INFO:Finished creating preprocessing pipeline.
+2024-12-16 14:31:31,315:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\Users\user\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['TL', 'ML', 'contest', 'rating'],
+                                    transformer=SimpleImputer(add_indicator=False,
+                                                              copy=True,
+                                                              fill_value=None,
+                                                              keep_empty_features=False,
+                                                              missing_values=nan,
+                                                              strategy='mean'))),
+                ('categorical_imputer',
+                 TransformerWrap...
+                 TransformerWrapper(exclude=None, include=['index'],
+                                    transformer=TargetEncoder(cols=['index'],
+                                                              drop_invariant=False,
+                                                              handle_missing='return_nan',
+                                                              handle_unknown='value',
+                                                              hierarchy=None,
+                                                              min_samples_leaf=20,
+                                                              return_df=True,
+                                                              smoothing=10,
+                                                              verbose=0))),
+                ('clean_column_names',
+                 TransformerWrapper(exclude=None, include=None,
+                                    transformer=CleanColumnNames(match='[\\]\\[\\,\\{\\}\\"\\:]+')))],
+         verbose=False)
+2024-12-16 14:31:31,315:INFO:Creating final display dataframe.
+2024-12-16 14:31:41,262:INFO:Setup _display_container:                        Description             Value
+0                       Session id               123
+1                           Target                dp
+2                      Target type            Binary
+3              Original data shape        (1000, 49)
+4           Transformed data shape     (1000, 16771)
+5      Transformed train set shape      (700, 16771)
+6       Transformed test set shape      (300, 16771)
+7                  Ignore features                36
+8                 Numeric features                 4
+9                    Text features                 7
+10            Categorical features                 1
+11        Rows with missing values             34.3%
+12                      Preprocess              True
+13                 Imputation type            simple
+14              Numeric imputation              mean
+15          Categorical imputation              mode
+16  Text features embedding method            tf-idf
+17        Maximum one-hot encoding                25
+18                 Encoding method              None
+19                  Fold Generator   StratifiedKFold
+20                     Fold Number                10
+21                        CPU Jobs                -1
+22                         Use GPU             False
+23                  Log Experiment             False
+24                 Experiment Name  clf-default-name
+25                             USI              72fd
+2024-12-16 14:31:41,341:INFO:Soft dependency imported: xgboost: 2.1.2
+2024-12-16 14:31:41,356:INFO:Soft dependency imported: catboost: 1.2.7
+2024-12-16 14:31:41,420:INFO:Soft dependency imported: xgboost: 2.1.2
+2024-12-16 14:31:41,420:INFO:Soft dependency imported: catboost: 1.2.7
+2024-12-16 14:31:41,435:INFO:setup() successfully completed in 15.38s...............
+2024-12-16 14:31:41,435:INFO:Initializing create_model()
+2024-12-16 14:31:41,435:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000025B1AE8BAF0>, estimator=lightgbm, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs=None, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-12-16 14:31:41,435:INFO:Checking exceptions
+2024-12-16 14:31:41,451:INFO:Importing libraries
+2024-12-16 14:31:41,451:INFO:Copying training dataset
+2024-12-16 14:31:41,451:INFO:Defining folds
+2024-12-16 14:31:41,451:INFO:Declaring metric variables
+2024-12-16 14:31:41,451:INFO:Importing untrained model
+2024-12-16 14:31:41,467:INFO:Light Gradient Boosting Machine Imported successfully
+2024-12-16 14:31:41,467:INFO:Starting cross validation
+2024-12-16 14:31:41,545:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-12-16 14:32:06,451:INFO:Calculating mean and std
+2024-12-16 14:32:06,452:INFO:Creating metrics dataframe
+2024-12-16 14:32:06,459:INFO:Finalizing model
+2024-12-16 14:32:10,104:INFO:[LightGBM] [Info] Number of positive: 155, number of negative: 545
+2024-12-16 14:32:10,117:INFO:[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.010143 seconds.
+2024-12-16 14:32:10,117:INFO:You can set `force_col_wise=true` to remove the overhead.
+2024-12-16 14:32:10,117:INFO:[LightGBM] [Info] Total Bins 27786
+2024-12-16 14:32:10,117:INFO:[LightGBM] [Info] Number of data points in the train set: 700, number of used features: 912
+2024-12-16 14:32:10,132:INFO:[LightGBM] [Info] [binary:BoostFromScore]: pavg=0.221429 -> initscore=-1.257361
+2024-12-16 14:32:10,132:INFO:[LightGBM] [Info] Start training from score -1.257361
+2024-12-16 14:32:10,132:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:10,132:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:10,132:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:10,132:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:10,148:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:10,148:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:10,148:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:10,164:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:10,164:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:10,164:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:10,182:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:10,182:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:10,182:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:10,201:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:10,201:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:10,210:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:10,210:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:10,218:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:10,221:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:10,224:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:10,227:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:10,230:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:10,238:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:10,241:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:10,245:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:10,251:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:10,251:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:10,251:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:10,267:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:10,267:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:10,267:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:10,267:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:10,285:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:10,285:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:10,285:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:10,298:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:10,298:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:10,310:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:10,314:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:10,314:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:10,314:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:10,335:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:10,338:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:10,344:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:10,355:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:10,358:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:10,361:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:10,364:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:10,368:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:10,368:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:10,368:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:10,368:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:10,385:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:10,386:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:10,386:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:10,399:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:10,399:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:10,399:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:10,410:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:10,415:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:10,415:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:10,415:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:10,431:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:10,431:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:10,449:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:10,449:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:10,449:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:10,449:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:10,468:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:10,508:INFO:Uploading results into container
+2024-12-16 14:32:10,509:INFO:Uploading model into container now
+2024-12-16 14:32:10,518:INFO:_master_model_container: 1
+2024-12-16 14:32:10,518:INFO:_display_container: 2
+2024-12-16 14:32:10,518:INFO:LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0)
+2024-12-16 14:32:10,518:INFO:create_model() successfully completed......................................
+2024-12-16 14:32:10,767:INFO:Initializing evaluate_model()
+2024-12-16 14:32:10,767:INFO:evaluate_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000025B1AE8BAF0>, estimator=LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0), fold=None, fit_kwargs=None, plot_kwargs=None, feature_name=None, groups=None)
+2024-12-16 14:32:10,792:INFO:Initializing plot_model()
+2024-12-16 14:32:10,792:INFO:plot_model(plot=pipeline, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), verbose=False, display=None, display_format=None, estimator=LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000025B1AE8BAF0>, system=True)
+2024-12-16 14:32:10,792:INFO:Checking exceptions
+2024-12-16 14:32:10,797:INFO:Preloading libraries
+2024-12-16 14:32:10,813:INFO:Copying training dataset
+2024-12-16 14:32:10,813:INFO:Plot type: pipeline
+2024-12-16 14:32:10,967:INFO:Visual Rendered Successfully
+2024-12-16 14:32:11,236:INFO:plot_model() successfully completed......................................
+2024-12-16 14:32:11,278:INFO:PyCaret ClassificationExperiment
+2024-12-16 14:32:11,278:INFO:Logging name: clf-default-name
+2024-12-16 14:32:11,278:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2024-12-16 14:32:11,278:INFO:version 3.3.2
+2024-12-16 14:32:11,278:INFO:Initializing setup()
+2024-12-16 14:32:11,278:INFO:self.USI: 1899
+2024-12-16 14:32:11,278:INFO:self._variable_keys: {'fold_groups_param', 'y_test', '_ml_usecase', 'pipeline', 'fold_shuffle_param', 'fold_generator', 'gpu_param', '_available_plots', 'X_train', 'fix_imbalance', 'idx', 'exp_name_log', 'y_train', 'memory', 'seed', 'logging_param', 'html_param', 'X_test', 'target_param', 'X', 'exp_id', 'is_multiclass', 'gpu_n_jobs_param', 'USI', 'y', 'data', 'n_jobs_param', 'log_plots_param'}
+2024-12-16 14:32:11,278:INFO:Checking environment
+2024-12-16 14:32:11,278:INFO:python_version: 3.9.7
+2024-12-16 14:32:11,278:INFO:python_build: ('default', 'Sep 29 2021 19:20:16')
+2024-12-16 14:32:11,278:INFO:machine: AMD64
+2024-12-16 14:32:11,278:INFO:platform: Windows-10-10.0.22621-SP0
+2024-12-16 14:32:11,278:INFO:Memory: svmem(total=16846147584, available=3489898496, percent=79.3, used=13356249088, free=3489898496)
+2024-12-16 14:32:11,279:INFO:Physical Core: 4
+2024-12-16 14:32:11,279:INFO:Logical Core: 8
+2024-12-16 14:32:11,279:INFO:Checking libraries
+2024-12-16 14:32:11,279:INFO:System:
+2024-12-16 14:32:11,279:INFO:    python: 3.9.7 | packaged by conda-forge | (default, Sep 29 2021, 19:20:16) [MSC v.1916 64 bit (AMD64)]
+2024-12-16 14:32:11,279:INFO:executable: c:\Users\user\anaconda3\python.exe
+2024-12-16 14:32:11,279:INFO:   machine: Windows-10-10.0.22621-SP0
+2024-12-16 14:32:11,279:INFO:PyCaret required dependencies:
+2024-12-16 14:32:11,279:INFO:                 pip: 24.1.2
+2024-12-16 14:32:11,279:INFO:          setuptools: 69.5.1
+2024-12-16 14:32:11,279:INFO:             pycaret: 3.3.2
+2024-12-16 14:32:11,279:INFO:             IPython: 8.15.0
+2024-12-16 14:32:11,279:INFO:          ipywidgets: 8.1.2
+2024-12-16 14:32:11,279:INFO:                tqdm: 4.66.4
+2024-12-16 14:32:11,279:INFO:               numpy: 1.26.4
+2024-12-16 14:32:11,279:INFO:              pandas: 2.1.4
+2024-12-16 14:32:11,279:INFO:              jinja2: 3.1.4
+2024-12-16 14:32:11,279:INFO:               scipy: 1.11.4
+2024-12-16 14:32:11,279:INFO:              joblib: 1.3.2
+2024-12-16 14:32:11,279:INFO:             sklearn: 1.4.2
+2024-12-16 14:32:11,279:INFO:                pyod: 2.0.2
+2024-12-16 14:32:11,279:INFO:            imblearn: 0.12.3
+2024-12-16 14:32:11,279:INFO:   category_encoders: 2.6.4
+2024-12-16 14:32:11,279:INFO:            lightgbm: 4.5.0
+2024-12-16 14:32:11,279:INFO:               numba: 0.60.0
+2024-12-16 14:32:11,279:INFO:            requests: 2.32.2
+2024-12-16 14:32:11,279:INFO:          matplotlib: 3.8.4
+2024-12-16 14:32:11,280:INFO:          scikitplot: 0.3.7
+2024-12-16 14:32:11,280:INFO:         yellowbrick: 1.5
+2024-12-16 14:32:11,280:INFO:              plotly: 5.22.0
+2024-12-16 14:32:11,280:INFO:    plotly-resampler: Not installed
+2024-12-16 14:32:11,280:INFO:             kaleido: 0.4.1
+2024-12-16 14:32:11,280:INFO:           schemdraw: 0.15
+2024-12-16 14:32:11,280:INFO:         statsmodels: 0.14.2
+2024-12-16 14:32:11,280:INFO:              sktime: 0.26.0
+2024-12-16 14:32:11,280:INFO:               tbats: 1.1.3
+2024-12-16 14:32:11,280:INFO:            pmdarima: 2.0.4
+2024-12-16 14:32:11,280:INFO:              psutil: 5.9.0
+2024-12-16 14:32:11,280:INFO:          markupsafe: 2.1.3
+2024-12-16 14:32:11,280:INFO:             pickle5: Not installed
+2024-12-16 14:32:11,280:INFO:         cloudpickle: 2.2.1
+2024-12-16 14:32:11,280:INFO:         deprecation: 2.1.0
+2024-12-16 14:32:11,280:INFO:              xxhash: 3.5.0
+2024-12-16 14:32:11,280:INFO:           wurlitzer: Not installed
+2024-12-16 14:32:11,280:INFO:PyCaret optional dependencies:
+2024-12-16 14:32:11,280:INFO:                shap: 0.46.0
+2024-12-16 14:32:11,280:INFO:           interpret: Not installed
+2024-12-16 14:32:11,280:INFO:                umap: Not installed
+2024-12-16 14:32:11,280:INFO:     ydata_profiling: Not installed
+2024-12-16 14:32:11,280:INFO:  explainerdashboard: Not installed
+2024-12-16 14:32:11,280:INFO:             autoviz: Not installed
+2024-12-16 14:32:11,280:INFO:           fairlearn: Not installed
+2024-12-16 14:32:11,280:INFO:          deepchecks: Not installed
+2024-12-16 14:32:11,280:INFO:             xgboost: 2.1.2
+2024-12-16 14:32:11,280:INFO:            catboost: 1.2.7
+2024-12-16 14:32:11,280:INFO:              kmodes: Not installed
+2024-12-16 14:32:11,281:INFO:             mlxtend: Not installed
+2024-12-16 14:32:11,281:INFO:       statsforecast: Not installed
+2024-12-16 14:32:11,281:INFO:        tune_sklearn: Not installed
+2024-12-16 14:32:11,281:INFO:                 ray: Not installed
+2024-12-16 14:32:11,281:INFO:            hyperopt: Not installed
+2024-12-16 14:32:11,281:INFO:              optuna: 4.1.0
+2024-12-16 14:32:11,281:INFO:               skopt: Not installed
+2024-12-16 14:32:11,281:INFO:              mlflow: Not installed
+2024-12-16 14:32:11,281:INFO:              gradio: Not installed
+2024-12-16 14:32:11,281:INFO:             fastapi: Not installed
+2024-12-16 14:32:11,281:INFO:             uvicorn: Not installed
+2024-12-16 14:32:11,281:INFO:              m2cgen: Not installed
+2024-12-16 14:32:11,281:INFO:           evidently: Not installed
+2024-12-16 14:32:11,281:INFO:               fugue: Not installed
+2024-12-16 14:32:11,281:INFO:           streamlit: 1.22.0
+2024-12-16 14:32:11,281:INFO:             prophet: 1.1.6
+2024-12-16 14:32:11,281:INFO:None
+2024-12-16 14:32:11,281:INFO:Set up data.
+2024-12-16 14:32:11,300:INFO:Set up folding strategy.
+2024-12-16 14:32:11,300:INFO:Set up train/test split.
+2024-12-16 14:32:11,316:INFO:Set up index.
+2024-12-16 14:32:11,316:INFO:Assigning column types.
+2024-12-16 14:32:11,316:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2024-12-16 14:32:11,372:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-12-16 14:32:11,372:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-12-16 14:32:11,399:INFO:Soft dependency imported: xgboost: 2.1.2
+2024-12-16 14:32:11,401:INFO:Soft dependency imported: catboost: 1.2.7
+2024-12-16 14:32:11,447:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-12-16 14:32:11,448:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-12-16 14:32:11,479:INFO:Soft dependency imported: xgboost: 2.1.2
+2024-12-16 14:32:11,481:INFO:Soft dependency imported: catboost: 1.2.7
+2024-12-16 14:32:11,482:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2024-12-16 14:32:11,529:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-12-16 14:32:11,556:INFO:Soft dependency imported: xgboost: 2.1.2
+2024-12-16 14:32:11,559:INFO:Soft dependency imported: catboost: 1.2.7
+2024-12-16 14:32:11,598:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-12-16 14:32:11,614:INFO:Soft dependency imported: xgboost: 2.1.2
+2024-12-16 14:32:11,614:INFO:Soft dependency imported: catboost: 1.2.7
+2024-12-16 14:32:11,630:INFO:Engine successfully changes for model 'rbfsvm' to 'sklearn'.
+2024-12-16 14:32:11,700:INFO:Soft dependency imported: xgboost: 2.1.2
+2024-12-16 14:32:11,700:INFO:Soft dependency imported: catboost: 1.2.7
+2024-12-16 14:32:11,770:INFO:Soft dependency imported: xgboost: 2.1.2
+2024-12-16 14:32:11,770:INFO:Soft dependency imported: catboost: 1.2.7
+2024-12-16 14:32:11,770:INFO:Preparing preprocessing pipeline...
+2024-12-16 14:32:11,770:INFO:Set up simple imputation.
+2024-12-16 14:32:11,770:INFO:Set up text embedding.
+2024-12-16 14:32:11,786:INFO:Set up encoding of categorical features.
+2024-12-16 14:32:11,787:INFO:Set up column name cleaning.
+2024-12-16 14:32:16,511:INFO:Finished creating preprocessing pipeline.
+2024-12-16 14:32:16,527:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\Users\user\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['TL', 'ML', 'contest', 'rating'],
+                                    transformer=SimpleImputer(add_indicator=False,
+                                                              copy=True,
+                                                              fill_value=None,
+                                                              keep_empty_features=False,
+                                                              missing_values=nan,
+                                                              strategy='mean'))),
+                ('categorical_imputer',
+                 TransformerWrap...
+                 TransformerWrapper(exclude=None, include=['index'],
+                                    transformer=TargetEncoder(cols=['index'],
+                                                              drop_invariant=False,
+                                                              handle_missing='return_nan',
+                                                              handle_unknown='value',
+                                                              hierarchy=None,
+                                                              min_samples_leaf=20,
+                                                              return_df=True,
+                                                              smoothing=10,
+                                                              verbose=0))),
+                ('clean_column_names',
+                 TransformerWrapper(exclude=None, include=None,
+                                    transformer=CleanColumnNames(match='[\\]\\[\\,\\{\\}\\"\\:]+')))],
+         verbose=False)
+2024-12-16 14:32:16,527:INFO:Creating final display dataframe.
+2024-12-16 14:32:26,092:INFO:Setup _display_container:                        Description             Value
+0                       Session id               123
+1                           Target              math
+2                      Target type            Binary
+3              Original data shape        (1000, 49)
+4           Transformed data shape     (1000, 16602)
+5      Transformed train set shape      (700, 16602)
+6       Transformed test set shape      (300, 16602)
+7                  Ignore features                36
+8                 Numeric features                 4
+9                    Text features                 7
+10            Categorical features                 1
+11        Rows with missing values             34.3%
+12                      Preprocess              True
+13                 Imputation type            simple
+14              Numeric imputation              mean
+15          Categorical imputation              mode
+16  Text features embedding method            tf-idf
+17        Maximum one-hot encoding                25
+18                 Encoding method              None
+19                  Fold Generator   StratifiedKFold
+20                     Fold Number                10
+21                        CPU Jobs                -1
+22                         Use GPU             False
+23                  Log Experiment             False
+24                 Experiment Name  clf-default-name
+25                             USI              1899
+2024-12-16 14:32:26,176:INFO:Soft dependency imported: xgboost: 2.1.2
+2024-12-16 14:32:26,176:INFO:Soft dependency imported: catboost: 1.2.7
+2024-12-16 14:32:26,258:INFO:Soft dependency imported: xgboost: 2.1.2
+2024-12-16 14:32:26,258:INFO:Soft dependency imported: catboost: 1.2.7
+2024-12-16 14:32:26,258:INFO:setup() successfully completed in 15.02s...............
+2024-12-16 14:32:26,258:INFO:Initializing create_model()
+2024-12-16 14:32:26,258:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000025B572DB7F0>, estimator=lightgbm, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs=None, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-12-16 14:32:26,258:INFO:Checking exceptions
+2024-12-16 14:32:26,273:INFO:Importing libraries
+2024-12-16 14:32:26,273:INFO:Copying training dataset
+2024-12-16 14:32:26,287:INFO:Defining folds
+2024-12-16 14:32:26,287:INFO:Declaring metric variables
+2024-12-16 14:32:26,292:INFO:Importing untrained model
+2024-12-16 14:32:26,296:INFO:Light Gradient Boosting Machine Imported successfully
+2024-12-16 14:32:26,309:INFO:Starting cross validation
+2024-12-16 14:32:26,392:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-12-16 14:32:52,002:INFO:Calculating mean and std
+2024-12-16 14:32:52,004:INFO:Creating metrics dataframe
+2024-12-16 14:32:52,005:INFO:Finalizing model
+2024-12-16 14:32:55,919:INFO:[LightGBM] [Info] Number of positive: 202, number of negative: 498
+2024-12-16 14:32:55,935:INFO:[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.009660 seconds.
+2024-12-16 14:32:55,935:INFO:You can set `force_col_wise=true` to remove the overhead.
+2024-12-16 14:32:55,935:INFO:[LightGBM] [Info] Total Bins 27468
+2024-12-16 14:32:55,935:INFO:[LightGBM] [Info] Number of data points in the train set: 700, number of used features: 898
+2024-12-16 14:32:55,935:INFO:[LightGBM] [Info] [binary:BoostFromScore]: pavg=0.288571 -> initscore=-0.902332
+2024-12-16 14:32:55,935:INFO:[LightGBM] [Info] Start training from score -0.902332
+2024-12-16 14:32:55,953:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:55,953:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:55,953:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:55,953:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:55,953:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:55,966:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:55,971:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:55,975:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:55,975:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:55,975:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:55,975:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:55,988:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:55,988:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:55,988:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:55,988:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:55,988:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:56,003:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:56,003:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:56,003:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:56,003:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:56,003:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:56,019:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:56,019:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:56,019:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:56,019:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:56,035:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:56,035:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:56,035:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:56,035:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:56,050:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:56,053:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:56,053:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:56,053:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:56,053:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:56,066:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:56,075:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:56,075:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:56,075:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:56,075:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:56,089:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:56,089:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:56,089:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:56,089:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:56,106:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:56,106:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:56,106:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:56,106:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:56,106:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:56,121:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:56,121:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:56,121:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:56,121:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:56,121:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:56,137:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:56,137:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:56,137:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:56,153:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:56,153:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:56,159:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:56,159:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:56,168:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:56,173:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:56,175:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:56,175:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:56,175:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:56,189:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:56,189:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:56,189:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:56,189:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:56,205:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:56,205:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:56,205:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:56,205:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:56,220:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:56,220:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:56,220:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:56,220:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:56,236:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:56,236:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:56,236:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:56,254:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:56,254:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:56,254:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:56,254:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:56,268:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:56,268:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:32:56,311:INFO:Uploading results into container
+2024-12-16 14:32:56,312:INFO:Uploading model into container now
+2024-12-16 14:32:56,321:INFO:_master_model_container: 1
+2024-12-16 14:32:56,321:INFO:_display_container: 2
+2024-12-16 14:32:56,321:INFO:LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0)
+2024-12-16 14:32:56,321:INFO:create_model() successfully completed......................................
+2024-12-16 14:32:56,573:INFO:Initializing evaluate_model()
+2024-12-16 14:32:56,573:INFO:evaluate_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000025B572DB7F0>, estimator=LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0), fold=None, fit_kwargs=None, plot_kwargs=None, feature_name=None, groups=None)
+2024-12-16 14:32:56,591:INFO:Initializing plot_model()
+2024-12-16 14:32:56,591:INFO:plot_model(plot=pipeline, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), verbose=False, display=None, display_format=None, estimator=LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000025B572DB7F0>, system=True)
+2024-12-16 14:32:56,592:INFO:Checking exceptions
+2024-12-16 14:32:56,596:INFO:Preloading libraries
+2024-12-16 14:32:56,611:INFO:Copying training dataset
+2024-12-16 14:32:56,611:INFO:Plot type: pipeline
+2024-12-16 14:32:56,771:INFO:Visual Rendered Successfully
+2024-12-16 14:32:56,990:INFO:plot_model() successfully completed......................................
+2024-12-16 14:32:57,035:INFO:PyCaret ClassificationExperiment
+2024-12-16 14:32:57,035:INFO:Logging name: clf-default-name
+2024-12-16 14:32:57,035:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2024-12-16 14:32:57,035:INFO:version 3.3.2
+2024-12-16 14:32:57,035:INFO:Initializing setup()
+2024-12-16 14:32:57,035:INFO:self.USI: 1b12
+2024-12-16 14:32:57,035:INFO:self._variable_keys: {'fold_groups_param', 'y_test', '_ml_usecase', 'pipeline', 'fold_shuffle_param', 'fold_generator', 'gpu_param', '_available_plots', 'X_train', 'fix_imbalance', 'idx', 'exp_name_log', 'y_train', 'memory', 'seed', 'logging_param', 'html_param', 'X_test', 'target_param', 'X', 'exp_id', 'is_multiclass', 'gpu_n_jobs_param', 'USI', 'y', 'data', 'n_jobs_param', 'log_plots_param'}
+2024-12-16 14:32:57,035:INFO:Checking environment
+2024-12-16 14:32:57,035:INFO:python_version: 3.9.7
+2024-12-16 14:32:57,036:INFO:python_build: ('default', 'Sep 29 2021 19:20:16')
+2024-12-16 14:32:57,036:INFO:machine: AMD64
+2024-12-16 14:32:57,036:INFO:platform: Windows-10-10.0.22621-SP0
+2024-12-16 14:32:57,036:INFO:Memory: svmem(total=16846147584, available=3490959360, percent=79.3, used=13355188224, free=3490959360)
+2024-12-16 14:32:57,036:INFO:Physical Core: 4
+2024-12-16 14:32:57,036:INFO:Logical Core: 8
+2024-12-16 14:32:57,036:INFO:Checking libraries
+2024-12-16 14:32:57,036:INFO:System:
+2024-12-16 14:32:57,036:INFO:    python: 3.9.7 | packaged by conda-forge | (default, Sep 29 2021, 19:20:16) [MSC v.1916 64 bit (AMD64)]
+2024-12-16 14:32:57,036:INFO:executable: c:\Users\user\anaconda3\python.exe
+2024-12-16 14:32:57,036:INFO:   machine: Windows-10-10.0.22621-SP0
+2024-12-16 14:32:57,036:INFO:PyCaret required dependencies:
+2024-12-16 14:32:57,036:INFO:                 pip: 24.1.2
+2024-12-16 14:32:57,036:INFO:          setuptools: 69.5.1
+2024-12-16 14:32:57,036:INFO:             pycaret: 3.3.2
+2024-12-16 14:32:57,037:INFO:             IPython: 8.15.0
+2024-12-16 14:32:57,037:INFO:          ipywidgets: 8.1.2
+2024-12-16 14:32:57,037:INFO:                tqdm: 4.66.4
+2024-12-16 14:32:57,037:INFO:               numpy: 1.26.4
+2024-12-16 14:32:57,037:INFO:              pandas: 2.1.4
+2024-12-16 14:32:57,037:INFO:              jinja2: 3.1.4
+2024-12-16 14:32:57,037:INFO:               scipy: 1.11.4
+2024-12-16 14:32:57,037:INFO:              joblib: 1.3.2
+2024-12-16 14:32:57,037:INFO:             sklearn: 1.4.2
+2024-12-16 14:32:57,037:INFO:                pyod: 2.0.2
+2024-12-16 14:32:57,037:INFO:            imblearn: 0.12.3
+2024-12-16 14:32:57,037:INFO:   category_encoders: 2.6.4
+2024-12-16 14:32:57,037:INFO:            lightgbm: 4.5.0
+2024-12-16 14:32:57,037:INFO:               numba: 0.60.0
+2024-12-16 14:32:57,037:INFO:            requests: 2.32.2
+2024-12-16 14:32:57,037:INFO:          matplotlib: 3.8.4
+2024-12-16 14:32:57,037:INFO:          scikitplot: 0.3.7
+2024-12-16 14:32:57,038:INFO:         yellowbrick: 1.5
+2024-12-16 14:32:57,038:INFO:              plotly: 5.22.0
+2024-12-16 14:32:57,038:INFO:    plotly-resampler: Not installed
+2024-12-16 14:32:57,038:INFO:             kaleido: 0.4.1
+2024-12-16 14:32:57,038:INFO:           schemdraw: 0.15
+2024-12-16 14:32:57,038:INFO:         statsmodels: 0.14.2
+2024-12-16 14:32:57,038:INFO:              sktime: 0.26.0
+2024-12-16 14:32:57,038:INFO:               tbats: 1.1.3
+2024-12-16 14:32:57,038:INFO:            pmdarima: 2.0.4
+2024-12-16 14:32:57,038:INFO:              psutil: 5.9.0
+2024-12-16 14:32:57,038:INFO:          markupsafe: 2.1.3
+2024-12-16 14:32:57,038:INFO:             pickle5: Not installed
+2024-12-16 14:32:57,038:INFO:         cloudpickle: 2.2.1
+2024-12-16 14:32:57,038:INFO:         deprecation: 2.1.0
+2024-12-16 14:32:57,038:INFO:              xxhash: 3.5.0
+2024-12-16 14:32:57,038:INFO:           wurlitzer: Not installed
+2024-12-16 14:32:57,038:INFO:PyCaret optional dependencies:
+2024-12-16 14:32:57,038:INFO:                shap: 0.46.0
+2024-12-16 14:32:57,038:INFO:           interpret: Not installed
+2024-12-16 14:32:57,038:INFO:                umap: Not installed
+2024-12-16 14:32:57,038:INFO:     ydata_profiling: Not installed
+2024-12-16 14:32:57,038:INFO:  explainerdashboard: Not installed
+2024-12-16 14:32:57,038:INFO:             autoviz: Not installed
+2024-12-16 14:32:57,039:INFO:           fairlearn: Not installed
+2024-12-16 14:32:57,039:INFO:          deepchecks: Not installed
+2024-12-16 14:32:57,039:INFO:             xgboost: 2.1.2
+2024-12-16 14:32:57,039:INFO:            catboost: 1.2.7
+2024-12-16 14:32:57,039:INFO:              kmodes: Not installed
+2024-12-16 14:32:57,039:INFO:             mlxtend: Not installed
+2024-12-16 14:32:57,039:INFO:       statsforecast: Not installed
+2024-12-16 14:32:57,039:INFO:        tune_sklearn: Not installed
+2024-12-16 14:32:57,039:INFO:                 ray: Not installed
+2024-12-16 14:32:57,039:INFO:            hyperopt: Not installed
+2024-12-16 14:32:57,039:INFO:              optuna: 4.1.0
+2024-12-16 14:32:57,039:INFO:               skopt: Not installed
+2024-12-16 14:32:57,039:INFO:              mlflow: Not installed
+2024-12-16 14:32:57,039:INFO:              gradio: Not installed
+2024-12-16 14:32:57,039:INFO:             fastapi: Not installed
+2024-12-16 14:32:57,039:INFO:             uvicorn: Not installed
+2024-12-16 14:32:57,039:INFO:              m2cgen: Not installed
+2024-12-16 14:32:57,039:INFO:           evidently: Not installed
+2024-12-16 14:32:57,039:INFO:               fugue: Not installed
+2024-12-16 14:32:57,040:INFO:           streamlit: 1.22.0
+2024-12-16 14:32:57,040:INFO:             prophet: 1.1.6
+2024-12-16 14:32:57,040:INFO:None
+2024-12-16 14:32:57,040:INFO:Set up data.
+2024-12-16 14:32:57,063:INFO:Set up folding strategy.
+2024-12-16 14:32:57,063:INFO:Set up train/test split.
+2024-12-16 14:32:57,076:INFO:Set up index.
+2024-12-16 14:32:57,076:INFO:Assigning column types.
+2024-12-16 14:32:57,076:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2024-12-16 14:32:57,131:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-12-16 14:32:57,132:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-12-16 14:32:57,161:INFO:Soft dependency imported: xgboost: 2.1.2
+2024-12-16 14:32:57,161:INFO:Soft dependency imported: catboost: 1.2.7
+2024-12-16 14:32:57,187:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-12-16 14:32:57,203:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-12-16 14:32:57,220:INFO:Soft dependency imported: xgboost: 2.1.2
+2024-12-16 14:32:57,220:INFO:Soft dependency imported: catboost: 1.2.7
+2024-12-16 14:32:57,220:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2024-12-16 14:32:57,271:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-12-16 14:32:57,303:INFO:Soft dependency imported: xgboost: 2.1.2
+2024-12-16 14:32:57,303:INFO:Soft dependency imported: catboost: 1.2.7
+2024-12-16 14:32:57,343:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-12-16 14:32:57,381:INFO:Soft dependency imported: xgboost: 2.1.2
+2024-12-16 14:32:57,383:INFO:Soft dependency imported: catboost: 1.2.7
+2024-12-16 14:32:57,384:INFO:Engine successfully changes for model 'rbfsvm' to 'sklearn'.
+2024-12-16 14:32:57,455:INFO:Soft dependency imported: xgboost: 2.1.2
+2024-12-16 14:32:57,455:INFO:Soft dependency imported: catboost: 1.2.7
+2024-12-16 14:32:57,519:INFO:Soft dependency imported: xgboost: 2.1.2
+2024-12-16 14:32:57,519:INFO:Soft dependency imported: catboost: 1.2.7
+2024-12-16 14:32:57,519:INFO:Preparing preprocessing pipeline...
+2024-12-16 14:32:57,519:INFO:Set up simple imputation.
+2024-12-16 14:32:57,519:INFO:Set up text embedding.
+2024-12-16 14:32:57,519:INFO:Set up encoding of categorical features.
+2024-12-16 14:32:57,519:INFO:Set up column name cleaning.
+2024-12-16 14:33:03,773:INFO:Finished creating preprocessing pipeline.
+2024-12-16 14:33:03,775:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\Users\user\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['TL', 'ML', 'contest', 'rating'],
+                                    transformer=SimpleImputer(add_indicator=False,
+                                                              copy=True,
+                                                              fill_value=None,
+                                                              keep_empty_features=False,
+                                                              missing_values=nan,
+                                                              strategy='mean'))),
+                ('categorical_imputer',
+                 TransformerWrap...
+                 TransformerWrapper(exclude=None, include=['index'],
+                                    transformer=TargetEncoder(cols=['index'],
+                                                              drop_invariant=False,
+                                                              handle_missing='return_nan',
+                                                              handle_unknown='value',
+                                                              hierarchy=None,
+                                                              min_samples_leaf=20,
+                                                              return_df=True,
+                                                              smoothing=10,
+                                                              verbose=0))),
+                ('clean_column_names',
+                 TransformerWrapper(exclude=None, include=None,
+                                    transformer=CleanColumnNames(match='[\\]\\[\\,\\{\\}\\"\\:]+')))],
+         verbose=False)
+2024-12-16 14:33:03,775:INFO:Creating final display dataframe.
+2024-12-16 14:33:09,833:WARNING:c:\Users\user\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:289: UserWarning: Persisting input arguments took 0.56s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, y = self._memory_full_transform(
+
+2024-12-16 14:33:16,036:WARNING:c:\Users\user\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:289: UserWarning: Persisting input arguments took 0.63s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, y = self._memory_full_transform(
+
+2024-12-16 14:33:17,341:INFO:Setup _display_container:                        Description             Value
+0                       Session id               123
+1                           Target    shortest paths
+2                      Target type            Binary
+3              Original data shape        (1000, 49)
+4           Transformed data shape     (1000, 16691)
+5      Transformed train set shape      (700, 16691)
+6       Transformed test set shape      (300, 16691)
+7                  Ignore features                36
+8                 Numeric features                 4
+9                    Text features                 7
+10            Categorical features                 1
+11        Rows with missing values             34.3%
+12                      Preprocess              True
+13                 Imputation type            simple
+14              Numeric imputation              mean
+15          Categorical imputation              mode
+16  Text features embedding method            tf-idf
+17        Maximum one-hot encoding                25
+18                 Encoding method              None
+19                  Fold Generator   StratifiedKFold
+20                     Fold Number                10
+21                        CPU Jobs                -1
+22                         Use GPU             False
+23                  Log Experiment             False
+24                 Experiment Name  clf-default-name
+25                             USI              1b12
+2024-12-16 14:33:17,440:INFO:Soft dependency imported: xgboost: 2.1.2
+2024-12-16 14:33:17,440:INFO:Soft dependency imported: catboost: 1.2.7
+2024-12-16 14:33:17,542:INFO:Soft dependency imported: xgboost: 2.1.2
+2024-12-16 14:33:17,542:INFO:Soft dependency imported: catboost: 1.2.7
+2024-12-16 14:33:17,542:INFO:setup() successfully completed in 20.55s...............
+2024-12-16 14:33:17,542:INFO:Initializing create_model()
+2024-12-16 14:33:17,542:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000025B571BF850>, estimator=lightgbm, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs=None, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-12-16 14:33:17,542:INFO:Checking exceptions
+2024-12-16 14:33:17,555:INFO:Importing libraries
+2024-12-16 14:33:17,555:INFO:Copying training dataset
+2024-12-16 14:33:17,578:INFO:Defining folds
+2024-12-16 14:33:17,578:INFO:Declaring metric variables
+2024-12-16 14:33:17,578:INFO:Importing untrained model
+2024-12-16 14:33:17,590:INFO:Light Gradient Boosting Machine Imported successfully
+2024-12-16 14:33:17,590:INFO:Starting cross validation
+2024-12-16 14:33:17,678:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-12-16 14:33:40,858:WARNING:c:\Users\user\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2024-12-16 14:33:41,014:WARNING:c:\Users\user\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2024-12-16 14:33:48,097:WARNING:c:\Users\user\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2024-12-16 14:33:51,286:WARNING:c:\Users\user\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2024-12-16 14:33:54,004:WARNING:c:\Users\user\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2024-12-16 14:33:54,253:WARNING:c:\Users\user\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2024-12-16 14:33:55,735:WARNING:c:\Users\user\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2024-12-16 14:33:58,216:WARNING:c:\Users\user\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2024-12-16 14:33:58,271:WARNING:c:\Users\user\anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2024-12-16 14:33:58,302:INFO:Calculating mean and std
+2024-12-16 14:33:58,302:INFO:Creating metrics dataframe
+2024-12-16 14:33:58,313:INFO:Finalizing model
+2024-12-16 14:34:02,322:INFO:[LightGBM] [Info] Number of positive: 14, number of negative: 686
+2024-12-16 14:34:02,339:INFO:[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.012065 seconds.
+2024-12-16 14:34:02,339:INFO:You can set `force_col_wise=true` to remove the overhead.
+2024-12-16 14:34:02,339:INFO:[LightGBM] [Info] Total Bins 27505
+2024-12-16 14:34:02,353:INFO:[LightGBM] [Info] Number of data points in the train set: 700, number of used features: 914
+2024-12-16 14:34:02,353:INFO:[LightGBM] [Info] [binary:BoostFromScore]: pavg=0.020000 -> initscore=-3.891820
+2024-12-16 14:34:02,353:INFO:[LightGBM] [Info] Start training from score -3.891820
+2024-12-16 14:34:02,353:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:34:02,353:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:34:02,353:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:34:02,353:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:34:02,372:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:34:02,390:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:34:02,464:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:34:02,622:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:34:02,622:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:34:02,622:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:34:02,622:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:34:02,622:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:34:02,638:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:34:02,638:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:34:02,638:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:34:02,638:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:34:02,638:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:34:02,653:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:34:02,653:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:34:02,653:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:34:02,653:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:34:02,653:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:34:02,653:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:34:02,669:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:34:02,671:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:34:02,671:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:34:02,671:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:34:02,671:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:34:02,671:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:34:02,671:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:34:02,683:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:34:02,683:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:34:02,686:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:34:02,686:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:34:02,686:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:34:02,686:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2024-12-16 14:34:02,717:INFO:Uploading results into container
+2024-12-16 14:34:02,717:INFO:Uploading model into container now
+2024-12-16 14:34:02,732:INFO:_master_model_container: 1
+2024-12-16 14:34:02,732:INFO:_display_container: 2
+2024-12-16 14:34:02,732:INFO:LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0)
+2024-12-16 14:34:02,732:INFO:create_model() successfully completed......................................
+2024-12-16 14:34:03,000:INFO:Initializing evaluate_model()
+2024-12-16 14:34:03,000:INFO:evaluate_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000025B571BF850>, estimator=LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0), fold=None, fit_kwargs=None, plot_kwargs=None, feature_name=None, groups=None)
+2024-12-16 14:34:03,016:INFO:Initializing plot_model()
+2024-12-16 14:34:03,016:INFO:plot_model(plot=pipeline, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), verbose=False, display=None, display_format=None, estimator=LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000025B571BF850>, system=True)
+2024-12-16 14:34:03,016:INFO:Checking exceptions
+2024-12-16 14:34:03,016:INFO:Preloading libraries
+2024-12-16 14:34:03,031:INFO:Copying training dataset
+2024-12-16 14:34:03,031:INFO:Plot type: pipeline
+2024-12-16 14:34:03,220:INFO:Visual Rendered Successfully
+2024-12-16 14:34:03,458:INFO:plot_model() successfully completed......................................
+2024-12-16 14:34:32,680:INFO:Initializing plot_model()
+2024-12-16 14:34:32,680:INFO:plot_model(plot=feature_all, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), verbose=False, display=None, display_format=None, estimator=LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000025B6D036D60>, system=True)
+2024-12-16 14:34:32,681:INFO:Checking exceptions
+2024-12-16 14:34:32,684:INFO:Preloading libraries
+2024-12-16 14:34:32,695:INFO:Copying training dataset
+2024-12-16 14:34:32,695:INFO:Plot type: feature_all
+2024-12-16 14:34:33,315:WARNING:No coef_ found. Trying feature_importances_
+2024-12-16 14:34:50,938:INFO:Visual Rendered Successfully
+2024-12-16 14:34:52,154:INFO:plot_model() successfully completed......................................
+2024-12-16 14:34:54,048:INFO:Initializing plot_model()
+2024-12-16 14:34:54,048:INFO:plot_model(plot=feature, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), verbose=False, display=None, display_format=None, estimator=LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000025B6D036D60>, system=True)
+2024-12-16 14:34:54,048:INFO:Checking exceptions
+2024-12-16 14:34:54,053:INFO:Preloading libraries
+2024-12-16 14:34:54,067:INFO:Copying training dataset
+2024-12-16 14:34:54,067:INFO:Plot type: feature
+2024-12-16 14:34:54,068:WARNING:No coef_ found. Trying feature_importances_
+2024-12-16 14:34:54,827:INFO:Visual Rendered Successfully
+2024-12-16 14:34:55,775:INFO:plot_model() successfully completed......................................
+2024-12-16 14:35:01,365:INFO:Initializing plot_model()
+2024-12-16 14:35:01,365:INFO:plot_model(plot=feature, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), verbose=False, display=None, display_format=None, estimator=LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000025B1AE8BAF0>, system=True)
+2024-12-16 14:35:01,365:INFO:Checking exceptions
+2024-12-16 14:35:01,369:INFO:Preloading libraries
+2024-12-16 14:35:01,383:INFO:Copying training dataset
+2024-12-16 14:35:01,383:INFO:Plot type: feature
+2024-12-16 14:35:01,383:WARNING:No coef_ found. Trying feature_importances_
+2024-12-16 14:35:02,029:INFO:Visual Rendered Successfully
+2024-12-16 14:35:03,048:INFO:plot_model() successfully completed......................................
+2024-12-16 14:35:46,500:INFO:Initializing plot_model()
+2024-12-16 14:35:46,501:INFO:plot_model(plot=feature, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), verbose=False, display=None, display_format=None, estimator=LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000025B572DB7F0>, system=True)
+2024-12-16 14:35:46,501:INFO:Checking exceptions
+2024-12-16 14:35:46,505:INFO:Preloading libraries
+2024-12-16 14:35:46,519:INFO:Copying training dataset
+2024-12-16 14:35:46,519:INFO:Plot type: feature
+2024-12-16 14:35:46,520:WARNING:No coef_ found. Trying feature_importances_
+2024-12-16 14:35:47,167:INFO:Visual Rendered Successfully
+2024-12-16 14:35:48,074:INFO:plot_model() successfully completed......................................
+2024-12-16 14:35:57,100:INFO:Initializing plot_model()
+2024-12-16 14:35:57,100:INFO:plot_model(plot=feature, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), verbose=False, display=None, display_format=None, estimator=LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000025B571BF850>, system=True)
+2024-12-16 14:35:57,100:INFO:Checking exceptions
+2024-12-16 14:35:57,100:INFO:Preloading libraries
+2024-12-16 14:35:57,119:INFO:Copying training dataset
+2024-12-16 14:35:57,119:INFO:Plot type: feature
+2024-12-16 14:35:57,120:WARNING:No coef_ found. Trying feature_importances_
+2024-12-16 14:35:57,784:INFO:Visual Rendered Successfully
+2024-12-16 14:35:58,808:INFO:plot_model() successfully completed......................................
