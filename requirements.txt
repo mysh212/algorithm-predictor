@@ -1,0 +1,5 @@
+pandas
+pycaret
+scikit-learn
+nltk
+sympy
