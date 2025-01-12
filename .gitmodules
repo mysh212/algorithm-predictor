@@ -1,3 +1,6 @@
 [submodule "core"]
 	path = core
 	url = https://github.com/mysh212/python_core
+[submodule "BERT/core"]
+	path = BERT/core
+	url = https://github.com/mysh212/python_core
